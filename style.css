@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'basteleurM';
+    src: url(fonts\basteleur-master\ttf\Basteleur-Moonlight.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --black: #2f2f2f;
+    --white: #fff;
+    --red: #f83038;
+    --AMG: #a0a081;
+}
+h1 {
+    font-family: 'basteleurM', sans-serif;
+    font-size: 6em;
+}
+h2{
+    font-family: 'basteleurM', monospace;
+    margin-top: 20px;
+}
+.container{
+    position: relative;
+    margin: 0 auto;
+    width: 10%;
+    height: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  header{
+      position:absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 30px 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .main{
+    position: relative;
+    min-height: 100vh;
+    background: #a0a081;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .main:before{
+    content: 'Arctic Monkeys';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    font-size: 16vw;
+    font-weight: 700;
+    color:rgb(255,255,255,0.05);
+  }
+  .logo{
+    max-width: 200px;
+  }
+  .navigation{
+    display: flex;
+    font-family: monospace;
+  }
+  .navigation li{
+    list-style: none;
+    font-size: larger;
+  }
+  .navigation li a{
+    position: relative;
+    color: var(--black);
+    margin-left: 40px;
+    text-decoration: none;
+    transition: 0.25s;
+  }
+  .navigation li a:hover{
+    color: var(--white);
+  }
+  .content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 200px;
+    z-index: 1;
+  }
+  .content h2{
+    font-size: 5em;
+    font-weight: 700;
+    color: var(--black);
+    text-align: center;
+  }
+  .btn{
+    display: inline-block;
+    background: var(--black);
+    color: var(--white);
+    text-decoration: none;
+    padding: 16px 36px;
+    margin-top: 20px;
+    border-radius: 50px;
+    font-size: 1.25em;
+    font-family: monospace;
+    transition: 0.25s;
+  }
+  .btn:hover{
+    letter-spacing: 3px;
+  }
+  .album{
+    max-width: 80%;
+    max-height: 70%;
+  }
+  .footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .sci{
+    display: flex;
+  }
+  .sci li{
+    list-style: none;
+  }
+  .sci li a{
+    color: var(--black);
+    font-size: 2em;
+    margin-right: 20px;
+    transition: 0.25s;
+  }
+  .sci li a:hover{
+    color: var(--white);
+  }
+  .dots{
+    display: flex;
+  }
+  .dots .dot{
+    width: 10px;
+    height: 10px;
+    background: var(--black);
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  .dots .dot.active{
+    background: var(--white);
+  }
+
