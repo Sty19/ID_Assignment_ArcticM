@@ -1,8 +1,3 @@
-@font-face {
-    font-family: 'basteleurM';
-    src: url(fonts\basteleur-master\ttf\Basteleur-Moonlight.ttf);
-}
-
 *{
     margin: 0;
     padding: 0;
@@ -17,12 +12,12 @@
 }
 
 h1 {
-    font-family: 'basteleurM', sans-serif;
+    font-family: 'monotype-modern-display', monospace;
     font-size: 6em;
 }
 
 h2{
-    font-family: 'basteleurM', monospace;
+    font-family: 'monotype-modern-display', monospace;
     margin-top: 20px;
 }
 
@@ -179,7 +174,7 @@ h2{
     display: flex;
     justify-content: space-between;
     padding: 0 100px;
-    transition: 0.25s;
+    transition: 0.2s;
     opacity: 0;
     pointer-events: none;
     transition: 1s;

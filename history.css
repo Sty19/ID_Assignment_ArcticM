@@ -5,6 +5,66 @@
     --AMG: #a0a081;
 }
 
+.container{
+    position: relative;
+    margin: 0 auto;
+    width: 10%;
+    height: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  header{
+      position:absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 30px 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .main{
+    position: relative;
+    min-height: 100vh;
+    background: #a0a081;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .logo{
+    max-width: 250px;
+    max-height: 150px;
+    margin-top: 20%;
+  }
+
+  .navigation{
+    display: flex;
+    font-family: monospace;
+  }
+
+  .navigation li{
+    list-style: none;
+    font-size: larger;
+  }
+
+  .navigation li a{
+    position: relative;
+    color: var(--black);
+    margin-left: 40px;
+    text-decoration: none;
+    transition: 0.25s;
+  }
+
+  .navigation li a:hover{
+    color: var(--white);
+  }
+
+
 body{
     background-color: var(--AMG);
     margin: 0px;
@@ -14,12 +74,15 @@ body{
     height: 100vh;
     display: flex;
     align-items: center;
+    margin-top: 20%;
+    margin-right: 70%;
 }
 
 .menu-item{
     color: var(--black);
     font-size: clamp(3rem, 8vw, 8rem);
-    font-family: "Ibarra Real Nova", serif;
+    font-family: 'monotype-modern-display', sans-serif;
+    font-weight: 600;
 
     display: block;
     text-decoration: none;
@@ -28,7 +91,7 @@ body{
 }
 
 #menu-items{
-    margin-left: clamp(4rem, 20vw, 48rem);
+    margin-left: 0;
     position: relative;
     z-index: 2;
 }
@@ -41,51 +104,3 @@ body{
     opacity: 1;
 }
 
-#menu-background-pattern{
-    height: 100vh;
-    width: 100vw;
-
-    background-image: radial-gradient(
-        rgba(2255, 256, 255, 0.1) 9%,
-        transparent 9%
-    );
-    background-position: 0% 0%;
-    background-size: 12vmin 12vmin;
-
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    z-index: 1;
-
-    transition: opacity 800ms ease,
-    background-size 800ms ease;
-}
-
-#menu-items:hover ~ menu-background-pattern{
-    background-size: 11vmin 11vmin;
-    opacity: 0.5s;
-}
-
-#menu[data-active-index="0"] > #menu-background-pattern{
-    background-position: 0% - 25%;
-}
-
-#menu[data-active-index="1"] > #menu-background-pattern{
-    background-position: 0% - 50%;
-}
-
-#menu[data-active-index="2"] > #menu-background-pattern{
-    background-position: 0% - 75%;
-}
-
-#menu[data-active-index="3"] > #menu-background-pattern{
-    background-position: 0% - 100%;
-}
-
-#menu[data-active-index="4"] > #menu-background-pattern{
-    background-position: 0% - 125%;
-}
-
-#menu[data-active-index="5"] > #menu-background-pattern{
-    background-position: 0% - 150%;
-}
