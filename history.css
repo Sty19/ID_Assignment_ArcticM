@@ -116,8 +116,9 @@ ul {
   display: none;
 }
 
-.hovring ul li:hover img{
+.hovring li:hover img{
   display: block;
-  left: 50%;
+  position: relative;
+  left: 500px;
   transition: 2s;
 }
