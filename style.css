@@ -61,6 +61,7 @@ h2{
   .navigation{
     display: flex;
     font-family: monospace;
+    left: -2%;
   }
 
   .navigation li{
@@ -69,7 +70,7 @@ h2{
   }
 
   .navigation li a{
-    position: relative;
+    position: sticky;
     color: var(--black);
     margin-left: 40px;
     text-decoration: none;
@@ -127,25 +128,7 @@ h2{
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-
-  .sci{
-    display: flex;
-  }
-
-  .sci li{
-    list-style: none;
-  }
-
-  .sci li a{
-    color: var(--black);
-    font-size: 2em;
-    margin-right: 20px;
-    transition: 0.25s;
-  }
-
-  .sci li a:hover{
-    color: var(--white);
+    background-color: var(--AMG);
   }
 
   .dots{
@@ -167,7 +150,7 @@ h2{
   .slider .slides{
     position: absolute;
     top: 50%;
-    left: 0;
+    left: -0.5%;
     transform: translateY(-50%);
     z-index: 10;
     width: 100%;
@@ -201,4 +184,26 @@ h2{
     font-style: italic;
   }
 
-  
+  .bottom{
+    background-color: var(--black);
+    height: 8cm;
+  }
+
+  .sci{
+    display: flex;
+  }
+
+  .sci li{
+    list-style: none;
+  }
+
+  .sci li a{
+    color: var(--white);
+    font-size: 2em;
+    margin-right: 20px;
+    transition: 0.25s;
+  }
+
+  .sci li a:hover{
+    color: var(--AMG);
+  }
