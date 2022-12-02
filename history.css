@@ -81,7 +81,7 @@ body{
 
 .menu-item{
     color: var(--black);
-    font-size: clamp(3rem, 8vw, 8rem);
+    font-size: 6rem;
     font-family: 'monotype-modern-display', sans-serif;
     font-weight: 600;
 
@@ -122,5 +122,10 @@ ul {
   position: relative;
   left: 500px;
   bottom: 200px;
-  transition: 2s;
+}
+
+.album{
+  display: flex;
+  justify-items: auto;
+  align-items: flex-start;
 }
