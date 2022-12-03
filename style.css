@@ -124,13 +124,6 @@ h2{
     cursor: pointer;
   }
 
-  .popup{
-    display: grid;
-    background: var(--black);
-    border-radius: 6px;
-    place-items: center;
-  }
-
   .album{
     max-width: 80%;
     max-height: 70%;
