@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>AM Website History Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <style>
     </style>
   </head>
@@ -13,43 +14,54 @@
         <header>
             <a href="#"><img src="images\Logo\logo.png" class="logo"></a>
             <ul class="navigation">
+              <li><a href="Assignment01.html">Main</a></li>
               <li><a href="history.html">History</a></li>
               <li><a href="live.html">Live</a></li>
               <li><a href="#">Gallery</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
           </header>
-        <div id="menu">
-            <div id="menu-items">
-              <div class="container hovring">
-                <ul>
-                  <li>
-                    <span class="menu-item">TBHC</span>
-                    <img src="images\Albums\TBHC img.png" class="album" alt="">
-                  </li>
-                  <li>
-                    <span class="menu-item">AM</span>
-                    <img src="images\Albums\AM img.jpg" alt="">
-                  </li>
-                  <li>
-                    <span class="menu-item">SIAS</span>
-                    <img src="images\Albums\SIAS img.jpg" alt="">
-                  </li>
-                  <li>
-                    <span class="menu-item">Humbug</span>
-                    <img src="images\Albums\Humbug img.jpg" alt="">
-                  </li>
-                  <li>
-                    <span class="menu-item">FWN</span>
-                    <img src="images\Albums\FWN img.jpg" alt="">
-                  </li>
-                  <li>
-                    <span class="menu-item">WPSIA</span>
-                    <img src="images\Albums\WPSIA img.jpg" alt="">
-                  </li>
-                </ul>
+          <div class="container2">
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="images\Albums\TBHC img.png"></div>
+                <div class="swiper-slide"><img src="images\Albums\AM img.jpg"></div>
+                <div class="swiper-slide"><img src="images\Albums\SIAS img.jpg"></div>
+                <div class="swiper-slide"><img src="images\Albums\Humbug img.jpg"></div>
+                <div class="swiper-slide"><img src="images\Albums\FWN img.jpg"></div>
+                <div class="swiper-slide"><img src="images\Albums\WPSIA img.jpg"></div>
+
               </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+            
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+    
             </div>
+          </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+      const swiper = new Swiper('.swiper', {
+      loop: true,
+
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+
+  // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+    });
+    </script>
   </body>
 </html>

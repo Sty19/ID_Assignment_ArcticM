@@ -6,126 +6,82 @@
 }
 
 .container{
-    position: relative;
-    margin: 0 auto;
-    width: 10%;
-    height: 10%;
-    padding-left: 15%;
-    padding-right: 15%;
-  }
+  position: relative;
+  margin: 0 auto;
+  width: 10%;
+  height: 10%;
+  padding-left: 15%;
+  padding-right: 15%;
+}
 
-  header{
-      position:absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      padding: 30px 100px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-  }
-
-  .main{
-    position: relative;
-    min-height: 100vh;
-    background: #a0a081;
+header{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     padding: 30px 100px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
-  }
-
-  .logo{
-    max-width: 250px;
-    max-height: 150px;
-    margin-top: 20%;
-  }
-
-  .navigation{
-    display: flex;
-    font-family: monospace;
-  }
-
-  .navigation li{
-    list-style: none;
-    font-size: larger;
-    left: -2%;
-  }
-
-  .navigation li a{
-    position: relative;
-    color: var(--black);
-    margin-left: 40px;
-    text-decoration: none;
-    transition: 0.25s;
-  }
-
-  .navigation li a:hover{
-    color: var(--white);
-  }
-
-
-body{
-    background-color: var(--AMG);
-    margin: 0px;
 }
 
-#menu{
-    height: -10vh;
-    display: flex;
-    align-items: center;
-    margin-top: 20%;
-    margin-right: 100%;
-}
-
-.menu-item{
-    color: var(--black);
-    font-size: 6rem;
-    font-family: 'monotype-modern-display', sans-serif;
-    font-weight: 600;
-
-    display: block;
-    text-decoration: none;
-    padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
-    transition: opacity 400ms ease;
-}
-
-#menu-items{
-    margin-left: 0;
-    position: relative;
-    z-index: 2;
-}
-
-#menu-items:hover .menu-item{
-    opacity: 0.3;
-}
-
-#menu-items:hover > .menu-item:hover{
-    opacity: 1;
-}
-
-ul {
-  list-style: none;
-}
-
-.container{
-  margin: auto;
-}
-
-.hovring ul li img{
-  display: none;
-}
-
-.hovring li:hover img{
-  display: block;
+.main{
   position: relative;
-  left: 500px;
-  bottom: 200px;
+  min-height: 100vh;
+  background: #a0a081;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.album{
+.logo{
+  max-width: 250px;
+  max-height: 150px;
+  margin-top: 20%;
+  mix-blend-mode: difference;
+}
+
+.navigation{
   display: flex;
-  justify-items: auto;
-  align-items: flex-start;
+  font-family: monospace;
+  left: -2%;
+}
+
+.navigation li{
+  list-style: none;
+  font-size: larger;
+}
+
+.navigation li a{
+  position: sticky;
+  color: var(--black);
+  margin-left: 40px;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.navigation li a:hover{
+  color: var(--white);
+}
+
+.container2{
+  width: 100%;
+  height: 100vh;
+  background: var(--AMG);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper{
+  margin-top: 20%;
+  width: 80%;
+  height: fit-content;
+}
+
+.swiper-slide img{
+  width: 50%;
+  margin-left: 20%;
 }
