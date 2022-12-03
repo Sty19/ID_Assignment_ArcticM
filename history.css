@@ -82,8 +82,9 @@ header{
 }
 
 .swiper-slide img{
-  width: 50%;
-  margin-left: 20%;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 5%;
 }
 
 .swiper .swiper-button-prev, .swiper .swiper-button-next{
@@ -92,4 +93,34 @@ header{
 
 .swiper .swiper-pagination-bullet-active{
   background-color: var(--white);
+}
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--AMG);
+}
+
+.sci{
+  display: flex;
+}
+
+.sci li{
+  list-style: none;
+}
+
+.sci li a{
+  color: var(--black);
+  font-size: 2em;
+  margin-right: 20px;
+  transition: 0.25s;
+}
+
+.sci li a:hover{
+  color: var(--white);
 }
