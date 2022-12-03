@@ -119,9 +119,16 @@ h2{
   .btn2{
     color: var(--white);
     text-decoration: none;
-    border-radius: 50px;
     font-size: large;
     font-family: monospace;
+    cursor: pointer;
+  }
+
+  .popup{
+    display: grid;
+    background: var(--black);
+    border-radius: 6px;
+    place-items: center;
   }
 
   .album{
