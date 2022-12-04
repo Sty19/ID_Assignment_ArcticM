@@ -14,7 +14,7 @@
               <li><a href="index.html">Main</a></li>
               <li><a href="history.html">Discography</a></li>
               <li><a href="live.html">Live</a></li>
-              <li><a href="#">Gallery</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
               <li><a href="contact.html">Contact</a></li>
             </ul>
           </header>
@@ -40,21 +40,6 @@
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendEmail(){
-            Email.send({
-                Host : "smtp.gmail.com",
-                Username : "s10243964@connect.np.edu.sg",
-                Password : "20W289222p05",
-                To : 's10243964@connect.np.edu.sg',
-                From : document.getElementById("email").value,
-                Subject : "Arctic Monkeys Contact Form",
-                Body : "Body"
-            }).then(
-            message => alert(message)
-            );
-        }
-    </script>
+
 </body>
 </html>
