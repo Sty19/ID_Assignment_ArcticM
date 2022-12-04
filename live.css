@@ -110,3 +110,38 @@ h2{
   .sci li a:hover{
     color: var(--white);
 }
+
+.heading{
+  display: flex;
+  font-size: 4em;
+  color: var(--black);
+  font-family: monospace;
+  width: 50%;
+  padding-bottom: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.livelist{
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  font-size: 1.5em;
+  font-family: monospace;
+}
+
+.livelist li{
+  margin-bottom: 25px;
+}
+
+.livelist li:link{
+  color: var(--black);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.livelist li:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}

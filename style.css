@@ -210,3 +210,15 @@ h2{
   .sci li a:hover{
     color: var(--white);
   }
+
+  @media only screen and (max-width: 769px){
+    .slider{
+      opacity: 0;
+    }
+  }
+
+  @media only screen and (max-width: 643px){
+    .slider{
+      opacity: 0;
+    }
+  }
