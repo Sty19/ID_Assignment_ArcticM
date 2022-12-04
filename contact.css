@@ -81,32 +81,52 @@ h2{
     color: var(--white);
   }
 
-  .footer{
-    position: absolute;
-    bottom: 0;
+.container{
     width: 100%;
-    padding: 30px 100px;
+    height: 100vh;
+    background: var(--AMG);
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    background-color: var(--AMG);
-  }
-  
-  .sci{
+    justify-content: center;
+    font-family: monospace;
+}
+
+form{
+    background: var(--black);
     display: flex;
-  }
-  
-  .sci li{
-    list-style: none;
-  }
-  
-  .sci li a{
-    color: var(--black);
-    font-size: 2em;
-    margin-right: 20px;
-    transition: 0.25s;
-  }
-  
-  .sci li a:hover{
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 20px;
+}
+
+form h3{
     color: var(--white);
-  }
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+form input, form textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: var(--white);
+    font-size: 16px;
+}
+
+form button{
+    padding: 15px;
+    background: var(--AMG);
+    color: var(--black);
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}
+

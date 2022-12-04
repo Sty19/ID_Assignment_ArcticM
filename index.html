@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  </head>
+  <title>AM Website Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+  <body style="background-color: #a0a081";">
+    <section class = "main">
+      <header>
+        <a href="https://index.html"><img src="images\Logo\logo.png" class="logo"></a>
+        <ul class="navigation">
+          <li><a href="index.html">Main</a></li>
+          <li><a href="history.html">Discography</a></li>
+          <li><a href="live.html">Live</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <img src="images\Albums\The Car img.jpg" class="album">
+        <h2>THE CAR</h2>
+        <a href="https://arcticmonkeys.ffm.to/thecar" class="btn">Listen Now</a>
+      </div>
+
+      <!--Slider Content-->
+      <div class="slider">
+        <div class="slides active">
+          <h2><span><strong>'The Car'</strong></span><br>Out 21/10/22</h2>
+        </div>
+        <div class="slides">
+          <h2><span><strong>'Side A'</strong></span>
+            <br>01. There'd Better Be A Mirrorball
+            <br>02. I Ain't Quite Where I Think I Am
+            <br>03. Sculpters Of Anything Goes
+            <br>04. Jet Skis On The Moat
+            <br>05. Body Paint</h2>
+        </div>
+        <div class="slides">
+          <h2><span><strong>'Side B'</strong></span>
+            <br>01. The Car
+            <br>02. Big Ideas
+            <br>03. Hello You
+            <br>04. Mr Schwartz
+            <br>05. Perfect Sense</h2>
+        </div>
+      </div>
+
+      <div class="footer">
+        <ul class="sci">
+          <li><a href="https://www.facebook.com/ArcticMonkeys/"><ion-icon name="logo-facebook"></ion-icon></a></li>
+          <li><a href="https://www.instagram.com/arcticmonkeys/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+          <li><a href="https://twitter.com/ArcticMonkeys?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        </ul>
+        <div class="dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+      const slides = document.querySelectorAll('.slides');
+      const dots = document.querySelectorAll('.dot');
+
+      function setActive(i){
+        for(slide of slides)
+        slide.classList.remove('active');
+        slides[i].classList.add('active');
+
+        for(dot of dots)
+        dot.classList.remove('active');
+        dots[i].classList.add('active');
+      }
+
+      for(let j =0; j<dots.length; j++){
+        dots[j].addEventListener('click', function(){
+          setActive(j)
+        })
+      }
+    </script>
+  </body>
+</html>
