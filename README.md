@@ -4,6 +4,8 @@ A redesign of the website for the indie rock band, Arctic Monkeys. I have chosen
 # Design Process
 This website is for fans and general viewers alike, those interested in knowing more about the band or perhaps buying tickets for their future concerts can find such information in this webstie. This website lists their discography, as well as promoting their newest releases on its main page, ensuring all visitors of the website know about their latest project.
 
+Wireframe - https://xd.adobe.com/view/93cd80ed-ab16-4d17-8973-bda71d050947-c69e/
+
 # Features
 Main page
 - Users can use the intuitive buttons to toggle between slides showing information about the new album
