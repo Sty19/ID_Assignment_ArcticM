@@ -7,10 +7,136 @@
   </head>
   <title>AM Website Landing Page</title>
   <link rel="stylesheet" href="style.css">
-  <body style="background-color: #a0a081";">
+  <body style="background-color: #a0a081">
+    <style>
+      
+  .content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 300px;
+    z-index: 1;
+  }
+
+  .content h2{
+    font-size: 5em;
+    font-weight: 700;
+    color: var(--black);
+    text-align: center;
+  }
+
+  .btn{
+    display: inline-block;
+    background: var(--black);
+    color: var(--white);
+    text-decoration: none;
+    padding: 16px 36px;
+    border-radius: 50px;
+    margin-top: 20px;
+    font-size: 1.25em;
+    font-family: monospace;
+    transition: 0.25s;
+  }
+
+  .btn:hover{
+    letter-spacing: 3px;
+  }
+
+  .btn2{
+    color: var(--white);
+    text-decoration: none;
+    font-size: large;
+    font-family: monospace;
+    cursor: pointer;
+  }
+
+  .album{
+    max-width: 80%;
+    max-height: 70%;
+  }
+
+  .slider .slides{
+    position: absolute;
+    top: 50%;
+    left: -0.5%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    transition: 0.2s;
+    opacity: 0;
+    pointer-events: none;
+    transition: 1s;
+  }
+
+  .slider .slides.active{
+    opacity: 1;
+    top:50%;
+  }
+
+  .slider .slides h2{
+    color: var(--white);
+    font-size: x-large;
+  }
+
+  .slider .slides h2:last-child{
+    text-align: center;
+  }
+
+  .slider .slides h2 span{
+    color: var(--black);
+    font-size: 0.75em;
+    font-weight: 400;
+    font-style: italic;
+  }
+  .footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--AMG);
+  }
+
+  .dots{
+    display: flex;
+  }
+
+  .dots .dot{
+    width: 10px;
+    height: 10px;
+    background: var(--black);
+    cursor: pointer;
+    margin-left: 10px;
+  }
+
+  .dots .dot.active{
+    background: var(--white);
+  }
+
+  @media only screen and (max-width: 769px){
+    .slider{
+      opacity: 0;
+    }
+  }
+
+  @media only screen and (max-width: 643px){
+    .slider{
+      opacity: 0;
+    }
+  }
+    </style>
     <section class = "main">
       <header>
+        <!--Logo-->
         <a href="https://index.html"><img src="images\Logo\logo.png" class="logo"></a>
+        <!--Navigation Bar-->
         <ul class="navigation">
           <li><a href="index.html">Main</a></li>
           <li><a href="history.html">Discography</a></li>
@@ -20,6 +146,7 @@
         </ul>
       </header>
       <div class="content">
+        <!--Newest Album-->
         <img src="images\Albums\The Car img.jpg" class="album">
         <h2>THE CAR</h2>
         <a href="https://arcticmonkeys.ffm.to/thecar" class="btn">Listen Now</a>
@@ -49,11 +176,13 @@
       </div>
 
       <div class="footer">
+        <!--Logos / Links to Social Media-->
         <ul class="sci">
           <li><a href="https://www.facebook.com/ArcticMonkeys/"><ion-icon name="logo-facebook"></ion-icon></a></li>
           <li><a href="https://www.instagram.com/arcticmonkeys/"><ion-icon name="logo-instagram"></ion-icon></a></li>
           <li><a href="https://twitter.com/ArcticMonkeys?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><ion-icon name="logo-twitter"></ion-icon></a></li>
         </ul>
+        <!--Slider for content-->
         <div class="dots">
           <span class="dot active"></span>
           <span class="dot"></span>
@@ -62,9 +191,11 @@
       </div>
     </section>
 
+    <!--Scripts used-->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
+    <!--Javascript for slider-->
     <script>
       const slides = document.querySelectorAll('.slides');
       const dots = document.querySelectorAll('.dot');
